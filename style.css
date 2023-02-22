@@ -1,0 +1,133 @@
+
+a{
+list-style: none;
+}
+.good{
+  border-right: 1px solid white;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 10px;
+  opacity: .8;
+  transition: .5s;
+
+}
+.good:hover{
+    text-shadow: 0px 0px 10px white;
+    color: white;
+    text-decoration: none;
+}
+@media(max-width:991px){
+ header .nav2{
+      display: none;
+  }
+  header .good{
+    width: 80%;
+   text-align: center;
+border: none;
+  }
+  header .navbar-nav{
+    display: none;
+  }
+}
+@media(max-width:598px){
+  header .good{
+    width: 20px;
+  }
+}
+.card-body:focus{
+  display: block;
+}
+.section4 .container-fluid{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+.section4 .container-fluid .card{
+  margin-bottom: 40px;
+  text-align: center;
+}
+.hr{
+padding: 0;
+margin: 0;
+background-color: gray;
+}
+.section5 .card,
+.section4 .card,
+.section6 .box{
+transition: .4s;
+}
+.section5 .card:hover,
+.section4 .card:hover,
+.section6 .box:hover{
+
+  transform: scale(1.1);
+}
+@media(max-width:656px){
+  .section5 .container-fluid{
+    flex-direction: column;
+  }
+  .section5 .p3{
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+@media(min-width:657px){
+  .section5 .container-fluid{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+  }
+  .section5 .p3{
+    margin-top: 10px;
+    margin: 20px auto;
+  }
+}
+.section6 .container-fluid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+@media(max-width:656px){
+  .section6 .container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(min-width:656px){
+  .section6 .container-fluid{
+    display: flex;
+ flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section6 .container-fluid .box{
+  margin-bottom: 10px;
+  height: 150px;
+  width: 300px;
+  border-radius: 6px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.section6 h2{
+  font-size: 16px;
+}
+.section6 i{
+  display: block;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.section6 a{
+  margin-top: 20px;
+}
